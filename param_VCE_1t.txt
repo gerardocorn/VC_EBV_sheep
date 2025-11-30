@@ -1,0 +1,35 @@
+DATAFILE
+fenotipo_Merino.txt
+SKIP_HEADER
+1
+TRAITS
+5      # diametro fibra
+FIELDS_PASSED TO OUTPUT
+
+WEIGHT(S)
+
+RESIDUAL_VARIANCE
+0.30  
+EFFECT
+2 cross alpha # sex
+EFFECT
+3 cross alpha # anho
+EFFECT
+4 cross alpha # poblacion
+EFFECT
+1 cross alpha # animal
+RANDOM
+animal 
+OPTIONAL
+
+FILE
+pedigri_Merino.txt
+SKIP_HEADER
+1
+PED_DEPTH
+0
+(CO)VARIANCES
+0.70
+OPTION method VCE
+OPTION EM-REML 100
+OPTION se_covar_function H2_t1 G_4_4_1_1/(G_4_4_1_1+R_1_1)
