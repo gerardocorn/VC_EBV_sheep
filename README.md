@@ -1,6 +1,6 @@
 # VC_EBV_sheep
 
-Ejemplo de juguete de valoración genética y estimación de componentes de varianza usando programas de la Familia BLUPf90. Las caracteristicas son diametro de fibra, peso vellón y peso vivo
+Ejemplo de juguete de valoración genética y estimación de componentes de varianza usando programas de la Familia **BLUPf90**. Las caracteristicas son diametro de fibra, peso vellón y peso vivo
 
 ### Descripcion de archivo de fenotipos (fenotipo_Merino.txt)
 
@@ -25,6 +25,16 @@ IId = identificación de animal
 FId = padre
 
 MId = madre
+
+### Archivos de parametros
+
+Los archivos de parámetros para correr los programas **renumf90** y **+blupf90** son :
+
+- *param_BLUP_t1.txt* y *param_VCE_t1.txt*, para valoración genética y estimación de componentes de varianza de "diametro de fibra", respectivamente
+  
+- *param_BLUP_t2.txt* y *param_VCE_t2.txt*, para valoración genética y estimación de componentes de varianza de "diametro de fibra" y "peso de vellón", respectivamente
+
+- *param_BLUP_t3.txt* y *param_VCE_t3.txt*, para valoración genética y estimación de componentes de varianza de "diametro de fibra", "peso de vellón" y "peso vivo", respectivamente
 
 ## Nota
 
